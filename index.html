@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif; /* Use the new font */
             background-color: #000000; /* Pitch black background */
             color: #ffffff; /* White text color for contrast */
             margin: 0;
@@ -15,21 +14,43 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column; /* Stack elements vertically */
         }
 
         .container {
             text-align: center;
         }
 
-       h1 {
-    margin: 10px 0; /* Adjusted margin */
-}
+        .nav-links {
+            position: absolute; /* Position at the top */
+            top: 20px; /* Space from the top */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust for centering */
+            margin-bottom: 20px; /* Space between nav links and profile picture */
+        }
 
-.profile-picture {
-    margin: 0; /* Set margin to 0 */
-    display: inline-block; /* To contain the spinning effect */
-    animation: spin 5s linear infinite; /* Spinning animation */
-}
+        .nav-links a {
+            color: #ffffff; /* White text color */
+            text-decoration: none; /* Remove underline */
+            margin: 0 20px; /* Space between links */
+            font-size: 1.2em; /* Font size for links */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline; /* Underline on hover */
+            color: #0056b3; /* Change color on hover */
+        }
+
+        h1 {
+            margin: 10px 0; /* Adjusted margin */
+        }
+
+        .profile-picture {
+            margin: 77 ; /* haha funny number */
+            display: inline-block; /* To contain the spinning effect */
+            animation: spin 5s linear infinite; /* Spinning animation */
+        }
 
         .profile-picture img {
             width: 200px; /* Increased size */
@@ -100,6 +121,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="nav-links">
+            <a href="revs.html">User Reviews</a>
+            <a href="404.html">Misc</a>
+            <a href="404.html">About</a>
+        </div>
+    <div class="container">
         <div class="profile-picture">
             <img src="profile-picture.jpg" alt="Profile Picture"> <!-- Updated filename -->
         </div>
@@ -119,7 +146,7 @@
                 <span class="tooltip">Spotify</span>
             </a>
         </div>
-        <p>website revision 5.6A</p>
+        <p>website revision revision 5.5B</p>
        <a href="https://github.com/Bizzerowasnotavailable/website">This website is open source</a>
     </div>
 </body>
